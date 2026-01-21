@@ -31,6 +31,7 @@ header
 {
     width: 100%;
     height: calc(100vh - 13vh);
+    background-color: blue;
 }
 .nav-links 
 {
