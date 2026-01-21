@@ -80,7 +80,33 @@ header
     color: var(--dark-blue);
     font-family: "Allison", cursive;
 }
-
-
+.product-name
+{
+    font-size: 1.7rem;
+}
+.header-pricing
+{
+    font-size: 1.5rem;
+    margin: 1rem 0px;
+}
+.primary-btn
+{
+    padding: 1rem 1.7rem;
+    font-size: 1.1rem;
+    border: none;
+    background-color:var(--light-gray);
+    /* color: var(--white); */
+    cursor: pointer;
+}
+.secondry-btn
+{
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    border: 2px solid var(--dark-blue);
+    background-color: var(--dark-blue);
+    color: var(--white);
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 
