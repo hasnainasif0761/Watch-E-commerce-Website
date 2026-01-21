@@ -29,11 +29,20 @@ nav
 }
 header
 {
-    width: 100%;
+    width: 80%;
     height: calc(100vh - 13vh);
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* position: absolute;
+    top: 0; */
+    margin: auto;
 }
 .nav-links 
 {
     display: flex;
+}
+.header-image
+{
+    width: 33rem;
 }
