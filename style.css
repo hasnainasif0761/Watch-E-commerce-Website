@@ -64,4 +64,23 @@ header
     text-decoration: none;
     margin-left: 2.5rem;
     color: var(--dark-gray);
+    font-size: 1rem;
+    letter-spacing: .04rem;
 }
+.header-heading
+{
+    font-size: 5rem;
+    position: relative;
+}
+.header-heading::before
+{
+    content: 'New';
+    position: absolute;
+    top: -60px;
+    color: var(--dark-blue);
+    font-family: "Allison", cursive;
+}
+
+
+
+
