@@ -66,6 +66,7 @@ header
     color: var(--dark-gray);
     font-size: 1rem;
     letter-spacing: .04rem;
+    position: relative;
 }
 .header-heading
 {
@@ -89,6 +90,11 @@ header
     font-size: 1.5rem;
     margin: 1rem 0px;
 }
+.btn-container
+{
+    display: flex;
+    margin-top: 2rem;
+}
 .primary-btn
 {
     padding: 1rem 1.7rem;
@@ -97,6 +103,7 @@ header
     background-color:var(--light-gray);
     /* color: var(--white); */
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 .secondry-btn
 {
@@ -107,6 +114,31 @@ header
     color: var(--white);
     cursor: pointer;
     transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
 }
-
-
+.primary-btn:hover
+{
+    transform: scale(1.1);
+}
+.secondry-btn:hover
+{
+    transform: scale(1);
+}
+.nav-links li a::after
+{
+    content: '';
+    background: var(--dark-gray);
+    position: absolute;
+    height: .15rem;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: right;
+}
+.nav-links li a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
