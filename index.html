@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch Ecommerce Website</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
     <!-- Section 1 Completed  Start-->
@@ -19,6 +23,7 @@
                 <li><a href="#">Arivals</a></li>
                 <li><a href="#">Offers</a></li>
                 <li><a href="#">Collection</a></li>
+                <li><a href="#"><i class="ri-shopping-cart-2-fill" style="font-size: 25px;position: relative;"></i><sup style="position: absolute;top: -10px;left: 20px;background: red; padding: 0.5px 6px; border-radius: 50%;color: white;" id="incr">0</sup></a></li>
             </ul>
             <div class="hamburger">
                 <div class="line"></div>
@@ -35,8 +40,8 @@
                 <h2 class="product-name">Blue Omega SA</h2>
                 <p class="header-pricing">$3,879</p>
                 <div class="btn-container">
-                    <button class="primary-btn">Discover</button>
-                    <button class="secondry-btn">Add to Cart</button>
+                    <button class="primary-btn" onclick="ShowAlert() , incrementCart()">Discover</button>
+                    <button class="secondry-btn" onclick="ShowAlert() , incrementCart()">Add to Cart</button>
                 </div>
             </div>
         </header>
@@ -50,7 +55,7 @@
                         <h1 class="section-two-heading">Quarts</h1>
                         <p class="section-two-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, animi architecto iste aspernatur, iure officia dolores veritatis praesentium voluptatem dolorem fugit earum reiciendis fuga temporibus cumque excepturi atque facere minus!</p>
                         <p class="section-two-pricing">$899</p>
-                        <button class="section-two-btn">Order Now</button>
+                        <button class="section-two-btn" onclick="ShowAlert() , incrementCart()">Order Now</button>
                     </div>
                     <div class="image-container">
                         <img src="./image/product watch.png" class="section-two-image">
@@ -61,11 +66,35 @@
 
          <!-- Section 3 Completed -->
           <section class="section-three section">
-            <h1>New Arivals</h1>
+            <h1 class="section-heading">New Arivals</h1>
             <div class="card-container">
-                
+                <div class="card">
+                    <img src="./image/Tissot.png" class="card-image">
+                    <h2>Tissot</h2>
+                    <p class="card-pricing">$ 3,988</p>
+                    <button class="secondry-btn" onclick="ShowAlert() , incrementCart()">Discover</button>
+                </div> 
+                <div class="card">
+                    <img src="./image/Klassc.png" class="card-image">
+                    <h2>Klassc</h2>
+                    <p class="card-pricing">$ 3,988</p>
+                    <button class="secondry-btn" onclick="ShowAlert() , incrementCart()">Discover</button>
+                </div> 
+                <div class="card">
+                    <img src="./image/citizen.png" class="card-image">
+                    <h2>Citizen</h2>
+                    <p class="card-pricing">$ 3,988</p>
+                    <button class="secondry-btn" onclick="ShowAlert() , incrementCart()">Discover</button>
+                </div> 
             </div>
           </section>
+
+          <!-- Section 4 Completed -->
+           <section class="section-four section">
+            <div class="section-four-container">
+                
+            </div>
+           </section>
     <script src="app.js"></script>
 </body>
 </html>
