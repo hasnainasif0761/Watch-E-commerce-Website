@@ -16,6 +16,7 @@
     --dark-gray: #3e3f43;
     --light-black:#1d1d1d;
 }
+/* Section One */
 .section
 {
     width: 100%;
@@ -116,7 +117,7 @@ header
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
 }
-.primary-btn:hover
+.primary-btn:hover, .section-two-btn:hover
 {
     transform: scale(1.1);
 }
@@ -124,7 +125,7 @@ header
 {
     transform: scale(1);
 }
-.nav-links li a::after
+.nav-links li a::after, .nav-links li a.active::after
 {
     content: '';
     background: var(--dark-gray);
@@ -137,8 +138,167 @@ header
     transition: transform 0.3s ease-in-out;
     transform-origin: right;
 }
-.nav-links li a:hover::after
+.nav-links li a:hover::after, .nav-links li a.active::after
 {
     transform: scaleX(1);
     transform-origin: left;
+}
+.line
+{
+    background: var(--dark-blue);
+    width: 2.3rem;
+    height: .2rem;
+    margin: .38rem;
+}
+.hamburger
+{
+    display: none;
+    cursor: pointer;
+}
+
+/* Section two */
+.section-two-container
+{
+    background-color: var(--light-peach);
+    width: 100%;
+    height: 60vh;
+    transform: skewY(-6deg);
+}
+.section-two
+{
+    display: flex;
+    align-items: center;
+}
+.section-two-image
+{
+    width: 28rem;
+}
+.section-two-inner-container
+{
+    transform: skewY(6deg);
+    width: 80%;
+    margin: auto;
+}
+.section-two-container, .section-two-inner-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-two-heading
+{
+    color: var(--dark-gray);
+    font-size: 4rem;
+}
+.section-two-para
+{
+    font-size: 1rem;
+    color: var(--dark-gray);
+    line-height: 1.5rem;
+    max-width: 80%;
+}
+.section-two-pricing
+{
+    font-size: 1.6rem;
+    color:var(--dark-gray);
+    margin: .6rem 0px;
+}
+.section-two-btn
+{
+    padding: .9rem 1.7rem;
+    border: .1rem solid var(--light-black);
+    font-size: 1.1rem;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 760px)
+{
+
+    /* Section One */
+    
+    .header-image
+    {
+        display: none;
+    }
+    .nav-links
+    {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        background: var(--light-gray);
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        right: 100%;
+        z-index: 2;
+        gap: 2rem ;
+        transition: all 0.5s ease-in-out;
+    }
+    .open
+    {
+        right: 0;
+    }
+    .nav-links li a
+    {
+        font-size: 1.3rem;
+        color: var(--dark-blue);
+        margin-left: 0;
+    }
+    .hamburger
+    {
+        display: block;
+        z-index: 5;
+    }
+    .logo
+    {
+        z-index: 5;
+    }
+    .header-heading
+    {
+        font-size: 3rem;
+    }
+    header
+    {
+        justify-content: flex-start;
+    }
+
+    /* Section One */
+    .section-two-image
+    {
+        display: none;
+    }
+    .section-two-heading
+    {
+        font-size: 2.9rem;
+    }
+    .section-two-para
+    {
+        font-size: .93rem;
+        max-width: 100%;
+    }
+    .section-two-pricing
+    {
+        font-size: 1.3rem;
+    }
+    .section-two-btn
+    {
+        font-size: 1rem;
+        padding: .7rem 1.4rem;
+    }
+    .section-two-container
+    {
+        height: 60vh;
+    }
+    .section-two-inner-container
+    {
+        width: 90%;
+    }
 }
