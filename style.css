@@ -378,10 +378,14 @@ header {
     inset: 0;
     background: rgba(0, 0, 0, 0.544);
     transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 1s ease;
 }
 .grid-card:hover::before
 {
-    
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 1s ease;
 }
 .grid-card::after
 {
@@ -397,8 +401,13 @@ header {
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
+    transition: opacity 1s ease;
 }
-
+.grid-card:hover::after
+{
+    opacity: 1;
+    visibility: visible;
+}
 
 
 
