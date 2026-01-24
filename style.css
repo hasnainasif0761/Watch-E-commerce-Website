@@ -379,6 +379,10 @@ header {
     background: rgba(0, 0, 0, 0.544);
     transform: scaleX(0);
 }
+.grid-card:hover::before
+{
+    
+}
 .grid-card::after
 {
     content: attr(collection);
@@ -394,6 +398,11 @@ header {
     opacity: 0;
     visibility: hidden;
 }
+
+
+
+
+
 /* Footer Section */
 footer
 {
@@ -519,4 +528,18 @@ footer
     {
         font-size: 1rem;
     }
+
+    /* Section Five */
+    .grid-card-container
+    {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        width: 90%;
+    }
+    .grid-card:nth-child(1),
+    .grid-card:nth-child(3)
+    {
+        grid-row: 1 / 2;
+    }
+
 }
